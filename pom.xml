@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>co.parameta</groupId>
-	<artifactId>prueba-tecnica</artifactId>
+	<artifactId>empleado-rest-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Prueba Tecnica</name>
 	<description>Servicio REST + SOAP para gestión de empleados</description>
@@ -56,6 +56,35 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+			<version>2.5.0</version> <!-- Usa la última versión estable -->
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>jakarta.xml.ws</groupId>
+			<artifactId>jakarta.xml.ws-api</artifactId>
+			<version>4.0.2</version>
+		</dependency>
+
+		<!-- Implementación de JAX-WS RI (Metro) -->
+		<dependency>
+			<groupId>com.sun.xml.ws</groupId>
+			<artifactId>jaxws-rt</artifactId>
+			<version>4.0.1</version>
+		</dependency>
+
+		<!-- Este puede ser necesario también para evitar el ClassNotFoundException -->
+		<dependency>
+			<groupId>org.glassfish.hk2</groupId>
+			<artifactId>osgi-resource-locator</artifactId>
+			<version>1.0.3</version>
 		</dependency>
 	</dependencies>
 
